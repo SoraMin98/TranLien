@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A0281C">
+        <ImageView
+            android:tint="#FAD4D4"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:padding="15dp"
+            android:onClick="update"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/update" />
+
+        <EditText
+            android:id="@+id/edtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_edt"
+            android:gravity="center"
+            android:hint="Nhập tên món ăn cần tìm"
+            android:textColor="#fff"
+            android:textColorHint="#75F7B1AA"
+            android:textSize="16dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gdvDSMonan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"></GridView>
+</LinearLayout>
